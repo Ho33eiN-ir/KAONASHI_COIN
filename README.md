@@ -22,8 +22,9 @@
     img.logo {
       width: 180px;
       height: auto;
-      border-radius: 12px;
+      border-radius: 50%;
       margin-bottom: 20px;
+      box-shadow: 0 0 20px 4px #222;
     }
     h1 {
       font-size: 2.4rem;
@@ -43,14 +44,18 @@
   </style>
 </head>
 <body>
-  <body>
   <header style="text-align: center; padding: 20px;">
-    <img src="logo.png" alt="KAONASHI COIN Logo" style="height: 100px;">
+    <img src="logo.png" alt="KAONASHI COIN Logo" class="logo">
   </header>
 
-  <img src="Untitled-1.jpg" alt="KAONASHI Logo" class="logo">
   <h1>KAONASHI COIN</h1>
   <p>
+    کوینی متفاوت، مرموز و قدرتمند؛ با الهام از شخصیت افسانه‌ای بی‌چهره، وارد دنیای رمز ارزها شوید.
+    KAONASHI COIN نماد سکوت، قدرت و ناشناس‌ماندن در جهانی شلوغ است.
+  </p>
+  <div class="footer">© 2025 KAONASHI COIN</div>
+</body>
+</html>
     کوینی متفاوت، مرموز و قدرتمند؛ با الهام از شخصیت افسانه‌ای بی‌چهره، وارد دنیای رمز ارزها شوید.
     KAONASHI COIN نماد سکوت، قدرت و ناشناس‌ماندن در جهانی شلوغ است.
   </p>
