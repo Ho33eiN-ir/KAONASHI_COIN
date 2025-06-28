@@ -54,7 +54,10 @@
     KAONASHI COIN نماد سکوت، قدرت و ناشناس‌ماندن در جهانی شلوغ است.
   </p>
   <div class="footer">© 2025 KAONASHI COIN</div>
-</body>
+<body>
+  <header style="text-align: center; padding: 20px;">
+    <img src="logo.png" alt="KAONASHI COIN Logo" style="height: 100px;">
+  </header>
 </html>
     کوینی متفاوت، مرموز و قدرتمند؛ با الهام از شخصیت افسانه‌ای بی‌چهره، وارد دنیای رمز ارزها شوید.
     KAONASHI COIN نماد سکوت، قدرت و ناشناس‌ماندن در جهانی شلوغ است.
