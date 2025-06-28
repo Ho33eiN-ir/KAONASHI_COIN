@@ -43,6 +43,11 @@
   </style>
 </head>
 <body>
+  <body>
+  <header style="text-align: center; padding: 20px;">
+    <img src="logo.png" alt="KAONASHI COIN Logo" style="height: 100px;">
+  </header>
+
   <img src="Untitled-1.jpg" alt="KAONASHI Logo" class="logo">
   <h1>KAONASHI COIN</h1>
   <p>
