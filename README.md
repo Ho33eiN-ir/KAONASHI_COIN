@@ -119,7 +119,7 @@
   <div class="social-icons">
     <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/telegram-app.png" alt="Telegram" /></a>
     <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter" /></a>
-    <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" /></a>
+    <a href="#"><img src="https://[img.icons8.com/ios-filled/50/ffffff/instagram-new.png](https://t.me/Airdr0pBaz)" alt="Instagram" /></a>
   </div>
 </section>
 
