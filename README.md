@@ -1,108 +1,146 @@
-faq_path = "/mnt/data/kaonashi_faq"
-os.makedirs(faq_path, exist_ok=True)
-
-# HTML صفحه FAQ
-faq_html = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>FAQ - KAONASHI COIN</title>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KAONASHI COIN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet" />
   <style>
     body {
-      background: #121212;
+      background-color: #121212;
       color: #fff;
       font-family: 'Vazirmatn', sans-serif;
-      padding: 40px 20px;
-      line-height: 1.8;
-      text-align: left;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1 {
+      margin: 0;
+      padding: 0;
       text-align: center;
+    }
+    header, footer {
+      background-color: #1f1f1f;
+      padding: 20px;
+    }
+    .logo {
+      width: 160px;
+      border-radius: 10px;
+      margin: 20px auto;
+    }
+    .section {
+      padding: 40px 20px;
+      border-bottom: 1px solid #333;
+    }
+    .section h2 {
       color: #f1c40f;
     }
-    .faq-item {
-      margin-bottom: 30px;
+    .roadmap-table {
+      width: 90%;
+      margin: auto;
+      border-collapse: collapse;
     }
-    .question {
-      font-weight: bold;
-      color: #1abc9c;
+    .roadmap-table th, .roadmap-table td {
+      border: 1px solid #555;
+      padding: 10px;
     }
-    .answer {
-      margin-top: 8px;
+    input, textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
     }
-    a.back-link {
-      display: block;
-      text-align: center;
-      margin-top: 40px;
+    .social-icons img {
+      width: 40px;
+      margin: 0 10px;
+    }
+    .price-box {
+      background: #1f1f1f;
+      display: inline-block;
+      padding: 15px 25px;
+      margin: 10px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+    }
+    .whitepaper-btn {
+      display: inline-block;
       background: #1abc9c;
       color: #000;
       padding: 10px 20px;
-      text-decoration: none;
       border-radius: 8px;
+      text-decoration: none;
       font-weight: bold;
-      width: fit-content;
-      margin-left: auto;
-      margin-right: auto;
     }
   </style>
 </head>
 <body>
 
-<h1>🤔 Frequently Asked Questions</h1>
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Kaonashi.png" alt="Kaonashi Logo" class="logo" />
+  <h1>KAONASHI COIN</h1>
+  <p>A mysterious coin. A symbol of anonymity in crypto.</p>
+  <a href="whitepaper.html" class="whitepaper-btn">📄 View Whitepaper</a>
+</header>
 
-<div class="faq-item">
-  <div class="question">What is KAONASHI COIN?</div>
-  <div class="answer">
-    KAONASHI is a decentralized meme-coin inspired by the mysterious “No-Face” from the anime Spirited Away. It's about community, privacy, and no central control.
+<section class="section">
+  <h2>💸 Live Prices</h2>
+  <div id="prices">
+    <div class="price-box" id="btc">Bitcoin: ...</div>
+    <div class="price-box" id="eth">Ethereum: ...</div>
+    <div class="price-box" id="kaonashi">Kaonashi: ~1000 KNS (placeholder)</div>
   </div>
-</div>
+</section>
 
-<div class="faq-item">
-  <div class="question">Who created it?</div>
-  <div class="answer">
-    No central team. It was created anonymously and is maintained by the community. There is no official owner or developer.
+<section class="section">
+  <h2>📍 Roadmap</h2>
+  <table class="roadmap-table">
+    <tr><th>Phase</th><th>Date</th><th>Status</th></tr>
+    <tr><td>Website Launch</td><td>Q2 2025</td><td>✅ Done</td></tr>
+    <tr><td>Whitepaper Release</td><td>Q3 2025</td><td>🛠 In Progress</td></tr>
+    <tr><td>DEX Listing</td><td>Q4 2025</td><td>📅 Planned</td></tr>
+  </table>
+</section>
+
+<section class="section">
+  <h2>👤 About Us</h2>
+  <p>
+    We are an independent team inspired by the No-Face character. KAONASHI COIN stands for privacy, community, and decentralization. No marketing, no owner. Just pure crypto.
+  </p>
+</section>
+
+<section class="section">
+  <h2>📨 Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" /><br />
+    <input type="email" placeholder="Your Email" /><br />
+    <textarea rows="4" placeholder="Your Message"></textarea><br />
+    <input type="submit" value="Send Message" />
+  </form>
+</section>
+
+<section class="section">
+  <h2>🌐 Social Media</h2>
+  <div class="social-icons">
+    <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/telegram-app.png" alt="Telegram" /></a>
+    <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter" /></a>
+    <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" /></a>
   </div>
-</div>
+</section>
 
-<div class="faq-item">
-  <div class="question">Is there a presale or token allocation?</div>
-  <div class="answer">
-    No. 100% of tokens were released publicly. There were no private sales, no VC funds, and no locked wallets.
-  </div>
-</div>
+<footer>
+  <p>© 2025 KAONASHI COIN. All rights reserved.</p>
+</footer>
 
-<div class="faq-item">
-  <div class="question">Where can I buy it?</div>
-  <div class="answer">
-    Initially on decentralized exchanges like PancakeSwap or Uniswap. More listings will follow.
-  </div>
-</div>
-
-<div class="faq-item">
-  <div class="question">What’s the utility of this token?</div>
-  <div class="answer">
-    It's a community-driven meme-token with a goal to evolve into a DAO where holders vote on proposals and development directions.
-  </div>
-</div>
-
-<a href="index.html" class="back-link">⬅ Back to Home</a>
+<script>
+  async function fetchPrices() {
+    try {
+      const res = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd');
+      const data = await res.json();
+      document.getElementById('btc').innerText = 'Bitcoin: $' + data.bitcoin.usd;
+      document.getElementById('eth').innerText = 'Ethereum: $' + data.ethereum.usd;
+    } catch (e) {
+      console.error('Error fetching prices');
+    }
+  }
+  fetchPrices();
+</script>
 
 </body>
 </html>
-"""
-
-# ذخیره فایل HTML
-faq_file_path = os.path.join(faq_path, "faq.html")
-with open(faq_file_path, "w", encoding="utf-8") as f:
-    f.write(faq_html)
-
-# ساخت فایل zip
-faq_zip = "/mnt/data/kaonashi_faq.zip"
-with ZipFile(faq_zip, "w") as zipf:
-    zipf.write(faq_file_path, "faq.html")
-
-faq_zip
 
