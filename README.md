@@ -1,4 +1,3 @@
-# ساخت پوشه برای مرحله FAQ
 faq_path = "/mnt/data/kaonashi_faq"
 os.makedirs(faq_path, exist_ok=True)
 
