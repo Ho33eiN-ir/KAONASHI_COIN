@@ -70,6 +70,7 @@
   </style>
 </head>
 <body>
+<script src="https://www.freshcoins.io/widget.js"></script>
 
 <header>
   <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Kaonashi.png" alt="Kaonashi Logo" class="logo" />
